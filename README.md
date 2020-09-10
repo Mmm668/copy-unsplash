@@ -17,7 +17,9 @@
 - 컴포넌트 단위로 나누어 재사용성을 높일 수 있는 구조 고민
 - 더 나은 ux  코드 가독성을 위해 개선해 나가야 할 방향 파악
 
-**[구현한 Pages]** Main, PhotoDetail, Search, Collection
+**[구현한 Pages]** 
+
+Main, PhotoDetail, Search, Collection
 
 **[Structure]**
 (v2에서 단일 파일로 구성된 구조 보완 예정)
