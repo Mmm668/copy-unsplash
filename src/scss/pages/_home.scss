@@ -1,0 +1,100 @@
+.Home{
+  .main-visual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 540px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    background: 50% 50%  / cover no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1573803796979-2d817a2f8600?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=5799&h=594&q=80 1x, https://images.unsplash.com/photo-1573803796979-2d817a2f8600?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=2&auto=format&fit=crop&w=5799&h=594&q=80 2x');
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0, .4);
+    }
+    .main-txt, .bottom-txt{
+      position: relative;
+    }
+    .main-txt{
+      display: flex;
+      flex-grow: 1;
+      width: 70%;
+      flex-direction: column;
+      justify-content: center;
+      .t1{
+        margin-bottom: 20px;
+        font-size: 46px;
+        font-weight: 600;
+        color: $white;
+      }
+      .t2{
+        line-height: 1.7;
+        font-size: 18px;
+        font-weight: 500;
+        color: $white;
+      }
+      .sub{
+        font-size: 15px;
+        font-weight: 300;
+        color: $white;
+        .bold{
+          font-weight: 400;
+        }
+      }
+      .SearchBar {
+        flex-grow: initial;
+        input{
+          height: 48px;
+          margin: 25px 0 20px;
+          padding-left: 55px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+        }
+        i{
+          margin-top: 4px;
+          font-size: 25px;
+        }
+      }
+    }
+    .bottom-txt{
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      > div{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 15px;
+        font-weight: 400;
+        color: $gray;
+        &:first-child{
+          justify-content: flex-start;
+        }
+        &:nth-child(2){
+          justify-content: center;
+        }
+        &:last-child{
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        span{
+          padding: 0 5px;
+          color: $gray;
+        }
+        img{
+          display: inline-block;
+          height: 21px;
+        }
+
+      }
+    }
+  }
+}

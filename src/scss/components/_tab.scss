@@ -1,0 +1,60 @@
+.Tab{
+  .head-wrap{
+    padding: 0 20px;
+    border-bottom: 1px solid $border-gray;
+  }
+  .head{
+    opacity: 0.7;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    & + .head{
+      margin-left: 30px;
+    }
+    .txt{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 13px 0;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      font-weight: 400;
+      color: $black;
+      i{
+        opacity: 0.3;
+        vertical-align: middle;
+        font-size: 18px;
+        margin-right: 6px;
+      }
+    }
+    &:hover, &.is-active{
+      opacity: 1;
+      .txt{
+        border-color: $black;
+        i{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .cont-wrap{
+    padding-top: 60px;
+    .title{
+      margin-bottom: 12px;
+      text-transform: capitalize;
+      font-size: 43px;
+      font-weight: 700;
+      color: $black;
+    }
+  }
+  .cont{
+    display: none;
+    min-height: calc(100vh - 120px); //about
+    background: pink;
+    padding: 200px;
+    text-align: center;
+    font-size: 30px;
+    &.is-active{
+      display: block;
+    }
+  }
+}

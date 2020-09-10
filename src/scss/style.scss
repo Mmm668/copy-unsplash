@@ -1,0 +1,40 @@
+@charset "UTF-8";
+//base-------------------------
+@import "base/color";
+@import "base/reset";
+@import "base/common";
+
+
+//components-------------------
+
+@import "components/header";
+@import "components/headerCategory";
+@import "components/footer";
+
+//common piece
+@import "components/searchBar";
+@import "components/pageTitle";
+@import "components/tab";
+@import "components/noData";
+
+//content piece
+@import "components/userIcon";
+@import "components/userCard";
+@import "components/tagList";
+@import "components/collection";
+
+//another layer piece
+@import "components/popupMenu";
+@import "components/popupShare";
+
+//main piece
+@import "components/photos";
+@import "components/photoCard";
+@import "components/photoDetail";
+
+
+//pages-------------------------
+@import "pages/home";
+@import "pages/search";
+@import "pages/collections";
+@import "pages/collectionPhotos";

@@ -1,0 +1,25 @@
+.PageTitle {
+  > .container {
+    padding: 60px 0 90px;
+    > .title {
+      margin-bottom: 15px;
+      font-size: 40px;
+      font-weight: 600;
+      color: $black;
+    }
+    > .msg {
+      max-width: 600px;
+      line-height: 1.5;
+      a {
+        opacity: 0.7;
+        display: block;
+        text-decoration: underline;
+        color: $black;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

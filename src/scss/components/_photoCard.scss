@@ -1,0 +1,111 @@
+.btn{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.PhotoCard{
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: e-resize;
+  &:hover{
+   .desc{
+     opacity: 1;
+   }
+  }
+  .img{
+    width: 100%;
+  }
+  .desc{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    font-weight: 400;
+    color: $gray;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,.5);
+    }
+    .left-area{
+      position: absolute;
+      left: 0;
+    }
+    .right-area{
+      position: absolute;
+      right: 0;
+    }
+    .upper{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+    }
+    .bottom{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      .left-area, .right-area{
+        bottom: 0;
+      }
+    }
+    .info-txt{
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 300;
+      color: $gray;
+      cursor: pointer;
+      i{
+        font-size: 17px;
+      }
+    }
+    //.btn{
+    //  padding: 0 15px;
+    //  -webkit-border-radius: 3px;
+    //  -moz-border-radius: 3px;
+    //  border-radius: 3px;
+    //  background: rgba(255,255,255,.9);
+    //  height: 29px;
+    //  overflow-y: hidden;
+    //  line-height: 29px;
+    //  cursor: pointer;
+    //  text-align: center;
+    //  & + .btn{
+    //    margin-left: 10px;
+    //  }
+    //  i{
+    //    font-size: 18px;
+    //  }
+    //}
+    .user-wrap{
+      .name{
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 190px;
+        max-height: 40px;
+        overflow-y: hidden;
+        line-height: 1.3;
+        word-break: break-all;
+        color: rgba(255,255,255, .7);
+      }
+    }
+  }
+}

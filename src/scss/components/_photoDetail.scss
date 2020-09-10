@@ -1,0 +1,115 @@
+.PhotoDetail{
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //&:before{
+  //  content: '';
+  //  position: absolute;
+  //  z-index: -1;
+  //  top: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  background: rgba(0,0,0,0.5);
+  //}
+  .photo-wrap{
+    padding: 8px 0;
+  }
+  .photo-upper{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 12px;
+    &.get-scroll{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .left-area{
+      float: left;
+      display: flex;
+      align-items: center;
+      .UserIcon{
+        display: inline-block;
+      }
+      .info-wrap{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .user-name{
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .user-id{
+        font-size: 13px;
+        font-weight: 400;
+        color: $gray;
+      }
+    }
+    .right-area{
+      float: right;
+    }
+  }
+  .bg-wrap{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 30px auto;
+    max-width: 1150px;
+    width: 93%;
+    background: $white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    .btn-close{
+      position: absolute;
+      top: -19px;
+      left: -24px;
+      font-size: 20px;
+      color: #c1c1c1;
+      cursor: pointer;
+    }
+  }
+  .main-photo{
+    padding: 20px 10px;
+    text-align: center;
+    > img{
+      vertical-align: middle;
+      max-height: 440px;
+    }
+  }
+  .photo-bottom{
+    padding: 10px 15px;
+    .left-area{
+      float: left;
+      i{
+        margin-left: 10px;
+        vertical-align: middle;
+        font-size: 15px;
+        color: $gray;
+      }
+      .loc{
+        vertical-align: middle;
+        margin-left: 5px;
+        font-size: 13px;
+      }
+    }
+    .right-area{
+      float: right;
+      .btn-basic{
+        margin-left: 5px;
+      }
+    }
+  }
+}

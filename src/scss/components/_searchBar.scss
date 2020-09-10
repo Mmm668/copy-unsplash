@@ -1,0 +1,27 @@
+.SearchBar{
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  i {
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $gray;
+    cursor: pointer;
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #f1f1f1;
+    line-height: 40px;
+    font-size: 15px;
+    color: $black;
+  }
+}

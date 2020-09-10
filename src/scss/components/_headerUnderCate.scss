@@ -1,0 +1,22 @@
+.HeaderUnderCate{
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  .tab-head{
+    opacity: 0.8;
+    padding: 0 20px 20px;
+    border-bottom: 2px solid transparent;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    color: #565656;
+    i{
+      font-size: 25px;
+      vertical-align: middle;
+      color: #999;
+    }
+    &.is-active{
+      opacity: 1;
+      border-color: $black;
+    }
+  }
+}

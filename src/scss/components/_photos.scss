@@ -1,0 +1,11 @@
+.Photos{
+  display: flex;
+  //min-height: 1500px;
+  margin: -10px -10px;
+  .photo-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 10px;
+  }
+}

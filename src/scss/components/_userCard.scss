@@ -1,0 +1,85 @@
+.user-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //margin-left: -12px;
+}
+
+.UserCard {
+  display: flex;
+  width: 33.33%;
+  padding: 12px 12px;
+  &:hover {
+    .inner-wrap {
+      border-color: #656565;
+    }
+  }
+  .inner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid $border-gray;
+    background: $white;
+    cursor: pointer;
+  }
+  .info-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .btn-follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #007fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: $white;
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .thumb {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin-right: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid $border-gray;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu4OXvz-ae0nUgYrD5TymZqMhJdgtQbNaYxRR-DEe9m6ZQouJ8w&s);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .bold {
+      display: flex;
+      margin-bottom: 2px;
+      font-size: 19px;
+      font-weight: 600;
+      color: $black;
+    }
+    .id {
+      display: flex;
+      font-size: 15px;
+      font-weight: 400;
+      color: $gray;
+    }
+  }
+}

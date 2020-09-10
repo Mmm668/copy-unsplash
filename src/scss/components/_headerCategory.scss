@@ -1,0 +1,77 @@
+.HeaderCategory{
+  overflow: hidden;
+  position: relative;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 95%,#fff);
+  }
+  .links{
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    .link{
+      display: flex;
+      position: relative;
+      padding: 15px 15px;
+      cursor: pointer;
+      opacity: 0.7;
+      -webkit-transition: all .1s;
+      -moz-transition: all .1s;
+      -ms-transition: all .1s;
+      -o-transition: all .1s;
+      transition: all .1s;
+      &:hover, &.current{
+        opacity: 1;
+      }
+      &.current{
+        .txt:before{
+          background: $black;
+        }
+      }
+      &:nth-child(1){
+        margin-right: 10px;
+        &:before{
+          content: '';
+          position: absolute;
+          z-index: 1;
+          top: 3px;
+          bottom: 5px;
+          right: -4px;
+          width: 1px;
+          background: #ddd;
+        }
+      }
+      .txt{
+        position: relative;
+        border-bottom: 2px solid transparent;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 400;
+        color: $black;
+        &:before{
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -12px;
+          height: 2px;
+          background: transparent;
+        }
+      }
+    }
+    .bar{
+      display: flex;
+      width: 1px;
+      background: #ddd;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+html,
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "맑은 고딕", Dotum, "돋움", "Apple SD Gothic Neo",
+  "Apple SD 산돌고딕 Neo", "Malgun Gothic", Helvetica, sans-serif;
+  font-weight: 400;
+  outline: 0;
+}
+
+.digit {
+  font-family: "montserrat", "Montserrat", "맑은 고딕", Dotum, "돋움",
+  "Apple SD Gothic Neo", "Apple SD 산돌고딕 Neo", "Malgun Gothic", Helvetica,
+  sans-serif;
+  font-weight: 600;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer !important;
+}
+
+h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2,
+h3,
+em,
+strong {
+  font-style: normal;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+.clearfix:after,
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+[type="text"]:focus,
+[type="number"]:focus,
+[type="tel"]:focus,
+[type="file"]:focus,
+[type="password"]:focus,
+[type="email"]:focus,
+[type="search"]:focus,
+[type="url"]:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: 200;
+  color: $gray;
+}
+
+input:-moz-placeholder {
+  font-size: 12px;
+  font-weight: 200;
+  color: $gray;
+}
+
+input::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 200;
+  color: $gray;
+}
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 200;
+  color: $gray;
+}
+
+input:focus {
+  border-color: $primary-color;
+}
+
+input:disabled {
+  background: $lighter-gray;
+}
+
+
+body,html {
+  height: 100vh;
+}

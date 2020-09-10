@@ -1,0 +1,55 @@
+.CollectionPhotos{
+  .page-header{
+    position: relative;
+    .bg{
+      opacity: 0.2;
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: saturate(40%);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+      }
+    }
+    .user-wrap{
+      display: flex;
+      margin-top: 21px;
+      .UserIcon{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .btn-share{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0 9px;
+        i{
+          -webkit-transform: scaleX(-1);
+          -moz-transform: scaleX(-1);
+          -ms-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          transform: scaleX(-1);
+          -ms-filter: flipH();
+          filter: flipH();
+        }
+      }
+    }
+  }
+  .count-info{
+    margin-bottom: 35px;
+  }
+}

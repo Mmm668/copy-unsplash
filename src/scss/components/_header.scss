@@ -1,0 +1,102 @@
+.Header {
+  padding: 0 20px;
+  background: $white;
+  &.get-scroll{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0, .2);
+    -moz-box-shadow:  0 3px 5px rgba(0,0,0, .2);
+    box-shadow:  0 3px 5px rgba(0,0,0, .2);
+  }
+  .upper {
+    padding: 10px 0;
+    display: flex;
+    .logo, .search-wrap, .tools {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      svg{
+        cursor: pointer;
+      }
+      .txt-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .top {
+          font-size: 16px;
+          font-weight: 500;
+          color: $black;
+        }
+        .bottom {
+          font-size: 13px;
+          font-weight: 300;
+          color: $black;
+        }
+      }
+    }
+    .search-wrap {
+      flex-grow: 1;
+      margin-left: 15px;
+      margin-right: 30px;
+    }
+    .tools{
+      .links{
+        display: flex;
+        .link{
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          font-size: 15px;
+          font-weight: 400;
+          color: $black;
+          -webkit-transition: all .1s;
+          -moz-transition: all .1s;
+          -ms-transition: all .1s;
+          -o-transition: all .1s;
+          transition: all .1s;
+          cursor: pointer;
+          .txt{
+            opacity: 0.6;
+            i{
+              vertical-align: middle;
+            }
+          }
+          &:hover{
+            .txt{
+              opacity: 1;
+            }
+            &.btn-type{
+              -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+              -moz-box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+              box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+            }
+          }
+          &.btn-type{
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            background: $white;
+          }
+          &.green{
+            margin-left: 10px;
+            border: 1px solid darkgreen;
+            background: green;
+            color: $white;
+          }
+        }
+        .bar{
+          width: 1px;
+          height: 30px;
+          margin: 0 13px;
+          background: #888;
+        }
+      }
+    }
+  }
+}
